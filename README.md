@@ -49,7 +49,7 @@ The analyzer extracts structured data:
 
 - Service: 1 Hour Labor
 
-This mirrors how voice platforms like Simple AI process transcripts into automation-ready outputs.
+This mirrors Simple AI process transcripts into automation-ready outputs.
 
 ---
 
@@ -86,27 +86,6 @@ This repository simulates how a real customer integration could be built on top 
 - `analyzers`
 - `analysis_results`
 - `summary`
-
-## Fast Setup
-
-**1. Install**
-```bash
-pip install -r requirements.txt
-```
-
-**2. Run Server**
-```bash
-uvicorn app.main:app --reload
-```
-
-**3. Test Simulation**
-```bash
-python test_simulation.py
-```
-
-This sends a simulated call payload, updates the database, and generates an PDF invoice in `generated_invoices/`.
-
-"I replaced the P-trap and used two one-inch copper fittings."
 
 ---
 
@@ -164,26 +143,9 @@ app/
  +-- core/                  # Config + logging
 ```
 
-### Core Components
-**CallProcessor**
-- Orchestrates the lifecycle of a call event
-- Coordinates analyzers and automation
-
-**AnalyzerEngine**
-- Runs analysis modules similar to Simple AI analyzers
-- Generates structured `analysis_results`
-
-**Extractor Service**
-- Converts technician narration into structured data
-
-**Background Tasks**
-- Handles inventory updates and invoice generation asynchronously
-
 ## Future Improvements
 
-- Plug real LLM structured extraction into extractor layer
 - Support multilingual technician narration
-- Add streaming transcript processing
-- Replace SQLite with production database
 - Integrate directly with Simple AI webhook events
+- Replace SQLite with production database
 
