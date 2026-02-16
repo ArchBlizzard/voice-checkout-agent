@@ -1,0 +1,9 @@
+
+uvicorn
+fastapi
+pydantic
+pydantic-settings
+loguru
+sqlalchemy
+reportlab
+requests

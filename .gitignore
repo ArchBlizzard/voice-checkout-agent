@@ -1,0 +1,31 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+app_data.db
+
+# Logs
+*.log
+app.log
+
+# Generated Content
+generated_invoices/
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
